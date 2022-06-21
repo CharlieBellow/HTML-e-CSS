@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/CharlieBellow" target="_blank" rel="external">repositório no GitHub</a></p>
+    
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <!-- o target="blank" -- abre a página em uma janela em branco -->
+    <!-- o rel='external' -- indica que é um link externo -->
+
+    
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <!--  rel="next" vai pra proxima página -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p>
+    <!--  target="_self" abre o link na mesma  página que vc já está -->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em PDF</a></li> 
+        <!-- se colocar só o endereço do arquivo, ele cria um link para a abrir. se quiser fazer o download, tem que colocar o parâmetro de download. consultar o site: ianna/assigments/media-types -->
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
