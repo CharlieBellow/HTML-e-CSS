@@ -6,18 +6,26 @@
     <title>Mídias em HTML5</title>
 </head>
 <body>
-    <!-- imagem diferente para cada tipo de tela -->
+    <!-- imagem diferente para cada tipo de tela imagem responsivo responsividade -->
     <h1>Imagem dinâmica</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
 
     <picture>
+        <!-- é necessário seguir a ordem da menor para a maior se não for assim, não funciona -->
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem flexível">
     </picture>
+    <!-- testar no celular pra ver se quando virar a tela do celular a imagem M aparece no lugar da p -->
 
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- é necessário colocar os parâmetros: 
+        autoplay (tocar automaticamente)
+        controls (controle para play e pause)
+        loop (tocar novamente quando terminr
+    ar)-->
+    <!-- o atributo preload="metadata" serve pra que o site carregue só as informações principais e não espere o audio carregar todo antes de exibir o site, reduzindo o tempo de carregamento -->
     <audio preload="metadata" autoplay controls loop>
         <source src="midia/guanacast-33.mp3" type="audio/mpeg">
         <source src="midia/guanacast-33.ogg" type="audio/ogg">
